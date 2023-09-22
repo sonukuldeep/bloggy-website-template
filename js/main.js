@@ -70,3 +70,14 @@ scrollAnimation(".animate-on-scroll-2")
 scrollAnimation(".animate-on-scroll-3")
 scrollAnimation(".animate-on-scroll-4")
 scrollAnimation(".animate-on-scroll-5")
+
+// hambvurger
+
+const hamburger = document.querySelector(".menu-button.w-nav-button")
+const dropDown = document.querySelector(".nav-menu.w-nav-menu")
+hamburger.addEventListener("click", () => {
+    dropDown.classList.toggle("activate")
+    document.querySelector(".brand.w-nav-brand.w--current").classList.toggle("activate")
+    document.querySelector(".menu-button.w-nav-button").classList.toggle("activate")
+    document.querySelector(".nav-top").classList.toggle("activate")
+})
